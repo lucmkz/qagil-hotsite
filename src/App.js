@@ -4,7 +4,10 @@ import { Parallax, ParallaxLayer } from 'react-spring/addons';
 
 import logo from './assets/logo.png';
 import Home from './assets/home.png';
-// import HomeWeb from './assets/HomeWeb.png';
+import createevent from './assets/createevent.png';
+import editprofile from './assets/editprofile.png';
+import login from './assets/login.png';
+import eventos from './assets/eventos.png';
 
 function App() {
   const url = (name, wrap = false) =>
@@ -55,12 +58,12 @@ function App() {
       <ParallaxLayer offset={1} speed={0.8} style={{ opacity: 0.1 }}>
         <img
           alt={'img'}
-          src={url('cloud')}
+          src={logo}
           style={{ display: 'block', width: '20%', marginLeft: '55%' }}
         />
         <img
           alt={'img'}
-          src={url('cloud')}
+          src={logo}
           style={{ display: 'block', width: '10%', marginLeft: '15%' }}
         />
       </ParallaxLayer>
@@ -68,12 +71,12 @@ function App() {
       <ParallaxLayer offset={1.75} speed={0.5} style={{ opacity: 0.1 }}>
         <img
           alt={'img'}
-          src={url('cloud')}
+          src={logo}
           style={{ display: 'block', width: '20%', marginLeft: '70%' }}
         />
         <img
           alt={'img'}
-          src={url('cloud')}
+          src={logo}
           style={{ display: 'block', width: '20%', marginLeft: '40%' }}
         />
       </ParallaxLayer>
@@ -81,12 +84,12 @@ function App() {
       <ParallaxLayer offset={1} speed={0.2} style={{ opacity: 0.2 }}>
         <img
           alt={'img'}
-          src={url('cloud')}
+          src={logo}
           style={{ display: 'block', width: '10%', marginLeft: '10%' }}
         />
         <img
           alt={'img'}
-          src={url('cloud')}
+          src={logo}
           style={{ display: 'block', width: '20%', marginLeft: '75%' }}
         />
       </ParallaxLayer>
@@ -94,17 +97,17 @@ function App() {
       <ParallaxLayer offset={1.6} speed={-0.1} style={{ opacity: 0.4 }}>
         <img
           alt={'img'}
-          src={url('cloud')}
+          src={logo}
           style={{ display: 'block', width: '20%', marginLeft: '60%' }}
         />
         <img
           alt={'img'}
-          src={url('cloud')}
+          src={logo}
           style={{ display: 'block', width: '25%', marginLeft: '30%' }}
         />
         <img
           alt={'img'}
-          src={url('cloud')}
+          src={logo}
           style={{ display: 'block', width: '10%', marginLeft: '80%' }}
         />
       </ParallaxLayer>
@@ -112,12 +115,12 @@ function App() {
       <ParallaxLayer offset={2.6} speed={0.4} style={{ opacity: 0.6 }}>
         <img
           alt={'img'}
-          src={url('cloud')}
+          src={logo}
           style={{ display: 'block', width: '20%', marginLeft: '5%' }}
         />
         <img
           alt={'img'}
-          src={url('cloud')}
+          src={logo}
           style={{ display: 'block', width: '15%', marginLeft: '75%' }}
         />
       </ParallaxLayer>
@@ -166,9 +169,28 @@ function App() {
         }}
       >
         <h1 style={{ position: 'absolute', top: 100, color: '#f99000' }}>
-          Web Application 1
+          Web Application
         </h1>
-        <img alt={'img'} src={url('bash')} style={{ width: '40%' }} />
+        <img
+          alt={'img'}
+          src={login}
+          style={{ width: '30%', marginLeft: '6%' }}
+        />
+        <img
+          alt={'img'}
+          src={editprofile}
+          style={{ width: '40%', marginLeft: '-9%' }}
+        />
+        <img
+          alt={'img'}
+          src={createevent}
+          style={{ width: '40%', marginLeft: '-11%' }}
+        />
+        <img
+          alt={'img'}
+          src={eventos}
+          style={{ width: '30%', marginLeft: '-10%' }}
+        />
       </ParallaxLayer>
 
       {/* clients */}
