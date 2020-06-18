@@ -2,6 +2,10 @@ import React from 'react';
 import './App.css';
 import { Parallax, ParallaxLayer } from 'react-spring/addons';
 
+import logo from './assets/logo.png';
+import Home from './assets/home.png';
+// import HomeWeb from './assets/HomeWeb.png';
+
 function App() {
   const url = (name, wrap = false) =>
     `${
@@ -43,8 +47,8 @@ function App() {
       <ParallaxLayer offset={1} speed={-0.3} style={{ pointerEvents: 'none' }}>
         <img
           alt={'img'}
-          src={url('satellite4')}
-          style={{ width: '15%', marginLeft: '70%' }}
+          src={logo}
+          style={{ width: '25%', marginLeft: '75%' }}
         />
       </ParallaxLayer>
 
@@ -132,7 +136,7 @@ function App() {
         <img alt={'img'} src={url('earth')} style={{ width: '60%' }} />
       </ParallaxLayer>
 
-      {/* server -> Home pages*/}
+      {/* Home pages */}
       <ParallaxLayer
         offset={0}
         speed={0.1}
@@ -143,18 +147,10 @@ function App() {
           justifyContent: 'center',
         }}
       >
-        <h1 style={{ position: 'absolute', top: 100, color: '#f99000' }}>
-          QAgil 0
-        </h1>
         <img
           alt={'img'}
-          src={url('server')}
-          style={{ width: '20%', marginLeft: '10%' }}
-        />
-        <img
-          alt={'imgg'}
-          src={url('server')}
-          style={{ width: '20%', marginLeft: '30%' }}
+          src={Home}
+          style={{ width: '70%', marginLeft: '-15%' }}
         />
       </ParallaxLayer>
 
