@@ -211,7 +211,6 @@ function App() {
         style={{
           backgroundSize: '80%',
           backgroundPosition: 'center',
-          backgroundImage: url('clients', true),
         }}
       >
         <h1 style={{ position: 'absolute', top: 100, color: '#f99000' }}>
