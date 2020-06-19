@@ -1,3 +1,8 @@
+body {
+  background-color: #f99000;
+  overflow: hidden;
+}
+
 .container > div > div {
   display: flex;
   align-items: center;
