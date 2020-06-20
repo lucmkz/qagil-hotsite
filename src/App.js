@@ -23,18 +23,15 @@ import loginUser from './assets/loginUser.png';
 import PartysUser from './assets/PartysUser.png';
 import qrcodeUser from './assets/qrcodeUser.png';
 
-function App() {
-  const url = (name, wrap = false) =>
-    `${
-      wrap ? 'url(' : ''
-    }https://awv3node-homepage.surge.sh/build/assets/${name}.svg${
-      wrap ? ')' : ''
-    }`;
+import outdoor from './assets/outdoor.png';
+import lendoQRCODEExample from './assets/lendoQRCODEExample.png';
+import mostrandoQRCODEExample from './assets/mostrandoQRCODEExample.png';
 
+function App() {
   let parallax;
 
   return (
-    <Parallax ref={(ref) => (parallax = ref)} pages={4}>
+    <Parallax ref={(ref) => (parallax = ref)} pages={6}>
       <ParallaxLayer
         offset={0}
         speed={1}
@@ -56,7 +53,17 @@ function App() {
       <ParallaxLayer
         offset={3}
         speed={1}
-        factor={4}
+        style={{ backgroundColor: '#28262E' }}
+      />
+
+      <ParallaxLayer
+        offset={4}
+        speed={1}
+        style={{ backgroundColor: '#28262E' }}
+      />
+      <ParallaxLayer
+        offset={5}
+        speed={1}
         style={{ backgroundColor: '#28262E' }}
       />
 
@@ -144,6 +151,34 @@ function App() {
         />
       </ParallaxLayer>
 
+      {/* Balloon */}
+      <ParallaxLayer offset={3.6} speed={0.4} style={{ opacity: 0.6 }}>
+        <img
+          alt={'img'}
+          src={ballon}
+          style={{ display: 'block', width: '20%', marginLeft: '5%' }}
+        />
+        <img
+          alt={'img'}
+          src={ballon}
+          style={{ display: 'block', width: '15%', marginLeft: '75%' }}
+        />
+      </ParallaxLayer>
+
+      {/* Balloon */}
+      <ParallaxLayer offset={2.8} speed={0.4} style={{ opacity: 0.6 }}>
+        <img
+          alt={'img'}
+          src={ballon}
+          style={{ display: 'block', width: '20%', marginLeft: '5%' }}
+        />
+        <img
+          alt={'img'}
+          src={ballon}
+          style={{ display: 'block', width: '15%', marginLeft: '75%' }}
+        />
+      </ParallaxLayer>
+
       {/* Party */}
       <ParallaxLayer
         offset={2.5}
@@ -185,11 +220,72 @@ function App() {
         />
       </ParallaxLayer>
 
-      {/* Web */}
+      {/* App User */}
       <ParallaxLayer
         offset={1}
         speed={0.1}
         onClick={() => parallax.scrollTo(2)}
+        style={{
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+        }}
+      >
+        <h1 style={{ position: 'absolute', top: 30, color: '#f99000' }}>
+          User Application
+        </h1>
+        <img alt={'img'} src={loginUser} style={{ width: '40%' }} />
+        <img
+          alt={'img'}
+          src={PartysUser}
+          style={{ width: '15%', marginLeft: '-8%' }}
+        />
+        <img
+          alt={'img'}
+          src={carrinhoUser}
+          style={{ width: '25%', marginTop: '16%' }}
+        />
+        <img
+          alt={'img'}
+          src={infoProdutoUser}
+          style={{ width: '25%', marginLeft: '-20%', marginBottom: '15%' }}
+        />
+        <img alt={'img'} src={qrcodeUser} style={{ width: '15%' }} />
+        <img
+          alt={'img'}
+          src={compraConcluidaUser}
+          style={{ width: '26%', marginLeft: '-5%%' }}
+        />
+      </ParallaxLayer>
+
+      {/* Barman */}
+      <ParallaxLayer
+        offset={2}
+        speed={0.1}
+        onClick={() => parallax.scrollTo(3)}
+        style={{
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+        }}
+      >
+        <h1 style={{ position: 'absolute', top: 30, color: '#f99000' }}>
+          Barman App
+        </h1>
+        <img alt={'img'} src={homeBarman} style={{ width: '20%' }} />
+        <img alt={'img'} src={leituraQRCODEBarman} style={{ width: '20%' }} />
+        <img
+          alt={'img'}
+          src={compraCloncluidaBarman}
+          style={{ width: '30%' }}
+        />
+      </ParallaxLayer>
+
+      {/* Web */}
+      <ParallaxLayer
+        offset={3}
+        speed={0.1}
+        onClick={() => parallax.scrollTo(4)}
         style={{
           display: 'flex',
           alignItems: 'center',
@@ -221,64 +317,91 @@ function App() {
         />
       </ParallaxLayer>
 
-      {/* Barman */}
+      {/* Usage */}
       <ParallaxLayer
-        offset={2}
+        offset={4}
         speed={0.1}
-        onClick={() => parallax.scrollTo(3)}
+        onClick={() => parallax.scrollTo(5)}
         style={{
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'center',
         }}
       >
-        <h1 style={{ position: 'absolute', top: 30, color: '#f99000' }}>
-          Barman App
+        <h1
+          style={{
+            position: 'absolute',
+            top: 0,
+            color: '#f99000',
+            left: '34%',
+          }}
+        >
+          Exemplo de Uso
         </h1>
-        <img alt={'img'} src={homeBarman} style={{ width: '20%' }} />
-        <img alt={'img'} src={leituraQRCODEBarman} style={{ width: '20%' }} />
         <img
           alt={'img'}
-          src={compraCloncluidaBarman}
-          style={{ width: '30%' }}
+          src={outdoor}
+          style={{
+            opacity: '0.4',
+            width: '80%',
+            left: '-10%',
+            marginLeft: '-30%',
+          }}
         />
+        <img
+          alt={'img'}
+          src={createevent}
+          style={{
+            width: '40%',
+            marginLeft: '-30%',
+            zIndex: '100',
+          }}
+        />
+        <p
+          style={{
+            position: 'absolute',
+            bottom: '20%',
+            color: '#f99000',
+            fontSize: '25px',
+            marginTop: '10%',
+            marginLeft: '10%',
+          }}
+        >
+          Crie um evento
+        </p>
       </ParallaxLayer>
 
-      {/* App User */}
+      {/* Usage */}
       <ParallaxLayer
-        offset={3}
+        offset={5}
         speed={0.1}
         onClick={() => parallax.scrollTo(0)}
         style={{
           display: 'flex',
-          alignItems: 'center',
+          alignItems: 'flex-end',
           justifyContent: 'center',
         }}
       >
-        <h1 style={{ position: 'absolute', top: 100, color: '#f99000' }}>
-          User Application
-        </h1>
-        <img alt={'img'} src={loginUser} style={{ width: '40%' }} />
+        <p
+          style={{
+            position: 'absolute',
+            top: 10,
+            color: '#f99000',
+            fontSize: '23px',
+          }}
+        >
+          Dentro do evento, o barman apenas terá que ler o QR Code que o cliente
+          irá gerar quando decidir o que quer consumir
+        </p>
         <img
           alt={'img'}
-          src={PartysUser}
-          style={{ width: '15%', marginLeft: '-8%' }}
+          src={mostrandoQRCODEExample}
+          style={{ width: '30%', left: 0 }}
         />
         <img
           alt={'img'}
-          src={carrinhoUser}
-          style={{ width: '25%', marginTop: '16%' }}
-        />
-        <img
-          alt={'img'}
-          src={infoProdutoUser}
-          style={{ width: '25%', marginLeft: '-20%', marginBottom: '15%' }}
-        />
-        <img alt={'img'} src={qrcodeUser} style={{ width: '15%' }} />
-        <img
-          alt={'img'}
-          src={compraConcluidaUser}
-          style={{ width: '26%', marginLeft: '-5%%' }}
+          src={lendoQRCODEExample}
+          style={{ width: '35%', left: 0, marginLeft: '-52%' }}
         />
       </ParallaxLayer>
     </Parallax>
