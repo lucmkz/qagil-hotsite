@@ -29,6 +29,8 @@ import mostrandoQRCODEExample from './assets/mostrandoQRCODEExample.png';
 import seta from './assets/seta.png';
 import userConcluido from './assets/userConcluido.png';
 import barmanConcluido from './assets/barmanConcluido.png';
+import exampleCreateEvent from './assets/exampleCreateEvent.png';
+import exampleCreateMenu from './assets/exampleCreateMenu.png';
 
 function App() {
   let parallax;
@@ -331,10 +333,19 @@ function App() {
           justifyContent: 'center',
         }}
       >
+        <h1
+          style={{
+            position: 'absolute',
+            color: '#f99000',
+            top: '0',
+          }}
+        >
+          Exemplo de uso
+        </h1>
         <p
           style={{
             position: 'absolute',
-            top: 10,
+            top: '5%',
             color: '#f99000',
             fontSize: '23px',
           }}
@@ -346,32 +357,27 @@ function App() {
           src={outdoor}
           style={{
             opacity: '0.4',
-            width: '80%',
-            left: '-10%',
-            marginLeft: '-30%',
+            position: 'absolute',
           }}
         />
         <img
           alt={'img'}
-          src={createevent}
+          src={exampleCreateEvent}
           style={{
             width: '40%',
-            marginLeft: '-30%',
-            zIndex: '100',
+            position: 'absolute',
+            left: '3%',
           }}
         />
-        <p
+        <img
+          alt={'img'}
+          src={exampleCreateMenu}
           style={{
+            width: '40%',
             position: 'absolute',
-            bottom: '20%',
-            color: '#f99000',
-            fontSize: '25px',
-            marginTop: '10%',
-            marginLeft: '10%',
+            left: '57%',
           }}
-        >
-          Crie um evento
-        </p>
+        />
       </ParallaxLayer>
 
       {/* Usage */}
