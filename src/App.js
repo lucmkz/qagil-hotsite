@@ -2,14 +2,19 @@ import React from 'react';
 import './App.css';
 import { Parallax, ParallaxLayer } from 'react-spring/addons';
 
+import party from './assets/party.png';
+import ballon from './assets/balloon.png';
+
 import logo from './assets/logo.png';
 import Home from './assets/home.png';
 import createevent from './assets/createevent.png';
 import editprofile from './assets/editprofile.png';
 import login from './assets/login.png';
 import eventos from './assets/eventos.png';
-import party from './assets/party.png';
-import ballon from './assets/balloon.png';
+
+import compraCloncluidaBarman from './assets/compraCloncluidaBarman.png';
+import homeBarman from './assets/homeBarman.png';
+import leituraQRCODEBarman from './assets/leituraQRCODEBarman.png';
 
 function App() {
   const url = (name, wrap = false) =>
@@ -48,7 +53,7 @@ function App() {
         style={{ backgroundColor: '#28262E' }}
       />
 
-      {/* satellite4 */}
+      {/* Logo */}
       <ParallaxLayer offset={1} speed={-0.3} style={{ pointerEvents: 'none' }}>
         <img
           alt={'img'}
@@ -57,6 +62,7 @@ function App() {
         />
       </ParallaxLayer>
 
+      {/* Balloon */}
       <ParallaxLayer offset={1} speed={0.8} style={{ opacity: 0.1 }}>
         <img
           alt={'img'}
@@ -70,6 +76,7 @@ function App() {
         />
       </ParallaxLayer>
 
+      {/* Balloon */}
       <ParallaxLayer offset={1.75} speed={0.5} style={{ opacity: 0.1 }}>
         <img
           alt={'img'}
@@ -83,6 +90,7 @@ function App() {
         />
       </ParallaxLayer>
 
+      {/* Balloon */}
       <ParallaxLayer offset={1} speed={0.2} style={{ opacity: 0.2 }}>
         <img
           alt={'img'}
@@ -96,6 +104,7 @@ function App() {
         />
       </ParallaxLayer>
 
+      {/* Balloon */}
       <ParallaxLayer offset={1.6} speed={-0.1} style={{ opacity: 0.4 }}>
         <img
           alt={'img'}
@@ -114,6 +123,7 @@ function App() {
         />
       </ParallaxLayer>
 
+      {/* Balloon */}
       <ParallaxLayer offset={2.6} speed={0.4} style={{ opacity: 0.6 }}>
         <img
           alt={'img'}
@@ -127,7 +137,7 @@ function App() {
         />
       </ParallaxLayer>
 
-      {/* Earth */}
+      {/* Party */}
       <ParallaxLayer
         offset={2.5}
         speed={-0.4}
@@ -168,7 +178,7 @@ function App() {
         />
       </ParallaxLayer>
 
-      {/* bash */}
+      {/* Web */}
       <ParallaxLayer
         offset={1}
         speed={0.1}
@@ -204,18 +214,7 @@ function App() {
         />
       </ParallaxLayer>
 
-      {/* clients */}
-      <ParallaxLayer
-        offset={2}
-        speed={-0.3}
-        onClick={() => parallax.scrollTo(0)}
-        style={{
-          backgroundSize: '80%',
-          backgroundPosition: 'center',
-          backgroundImage: url('clients', true),
-        }}
-      />
-
+      {/* Barman */}
       <ParallaxLayer
         offset={2}
         speed={0.1}
@@ -226,10 +225,16 @@ function App() {
           justifyContent: 'center',
         }}
       >
-        <h1 style={{ position: 'absolute', top: 100, color: '#f99000' }}>
-          Web Application 2
+        <h1 style={{ position: 'absolute', top: 30, color: '#f99000' }}>
+          Barman App
         </h1>
-        <img alt={'img'} src={url('bash')} style={{ width: '40%' }} />
+        <img alt={'img'} src={homeBarman} style={{ width: '20%' }} />
+        <img alt={'img'} src={leituraQRCODEBarman} style={{ width: '20%' }} />
+        <img
+          alt={'img'}
+          src={compraCloncluidaBarman}
+          style={{ width: '30%' }}
+        />
       </ParallaxLayer>
 
       {/* clients */}
