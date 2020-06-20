@@ -26,6 +26,9 @@ import qrcodeUser from './assets/qrcodeUser.png';
 import outdoor from './assets/outdoor.png';
 import lendoQRCODEExample from './assets/lendoQRCODEExample.png';
 import mostrandoQRCODEExample from './assets/mostrandoQRCODEExample.png';
+import seta from './assets/seta.png';
+import userConcluido from './assets/userConcluido.png';
+import barmanConcluido from './assets/barmanConcluido.png';
 
 function App() {
   let parallax;
@@ -328,16 +331,16 @@ function App() {
           justifyContent: 'center',
         }}
       >
-        <h1
+        <p
           style={{
             position: 'absolute',
-            top: 0,
+            top: 10,
             color: '#f99000',
-            left: '34%',
+            fontSize: '23px',
           }}
         >
-          Exemplo de Uso
-        </h1>
+          Crie um evento, divulge-o e cadastre os itens do menu
+        </p>
         <img
           alt={'img'}
           src={outdoor}
@@ -390,18 +393,44 @@ function App() {
             fontSize: '23px',
           }}
         >
-          Dentro do evento, o barman apenas terá que ler o QR Code que o cliente
-          irá gerar quando decidir o que quer consumir
+          Dentro do evento, o barman apenas terá que ler o QR Code para saber os
+          produtos comprados.
         </p>
+
         <img
           alt={'img'}
           src={mostrandoQRCODEExample}
-          style={{ width: '30%', left: 0 }}
+          style={{ width: '30%', left: '25%', position: 'absolute' }}
         />
         <img
           alt={'img'}
           src={lendoQRCODEExample}
-          style={{ width: '35%', left: 0, marginLeft: '-52%' }}
+          style={{ width: '35%', left: 0, position: 'absolute' }}
+        />
+        <img
+          alt={'img'}
+          src={seta}
+          style={{
+            width: '10%',
+            left: '50%',
+            top: '50%',
+            position: 'absolute',
+          }}
+        />
+        <img
+          alt={'img'}
+          src={barmanConcluido}
+          style={{
+            width: '30%',
+            left: '55%',
+            zIndex: 10,
+            position: 'absolute',
+          }}
+        />
+        <img
+          alt={'img'}
+          src={userConcluido}
+          style={{ width: '26%', left: '75%', position: 'absolute' }}
         />
       </ParallaxLayer>
     </Parallax>
