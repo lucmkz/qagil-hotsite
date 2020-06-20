@@ -16,6 +16,13 @@ import compraCloncluidaBarman from './assets/compraCloncluidaBarman.png';
 import homeBarman from './assets/homeBarman.png';
 import leituraQRCODEBarman from './assets/leituraQRCODEBarman.png';
 
+import carrinhoUser from './assets/carrinhoUser.png';
+import compraConcluidaUser from './assets/compraConcluidaUser.png';
+import infoProdutoUser from './assets/infoProdutoUser.png';
+import loginUser from './assets/loginUser.png';
+import PartysUser from './assets/PartysUser.png';
+import qrcodeUser from './assets/qrcodeUser.png';
+
 function App() {
   const url = (name, wrap = false) =>
     `${
@@ -237,20 +244,42 @@ function App() {
         />
       </ParallaxLayer>
 
-      {/* clients */}
+      {/* App User */}
       <ParallaxLayer
         offset={3}
         speed={0.1}
         onClick={() => parallax.scrollTo(0)}
         style={{
-          backgroundSize: '80%',
-          backgroundPosition: 'center',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
         }}
       >
         <h1 style={{ position: 'absolute', top: 100, color: '#f99000' }}>
-          Web Application 3
+          User Application
         </h1>
-        <img alt={'img'} src={url('bash')} style={{ width: '40%' }} />
+        <img alt={'img'} src={loginUser} style={{ width: '40%' }} />
+        <img
+          alt={'img'}
+          src={PartysUser}
+          style={{ width: '15%', marginLeft: '-8%' }}
+        />
+        <img
+          alt={'img'}
+          src={carrinhoUser}
+          style={{ width: '25%', marginTop: '16%' }}
+        />
+        <img
+          alt={'img'}
+          src={infoProdutoUser}
+          style={{ width: '25%', marginLeft: '-20%', marginBottom: '15%' }}
+        />
+        <img alt={'img'} src={qrcodeUser} style={{ width: '15%' }} />
+        <img
+          alt={'img'}
+          src={compraConcluidaUser}
+          style={{ width: '26%', marginLeft: '-5%%' }}
+        />
       </ParallaxLayer>
     </Parallax>
   );
