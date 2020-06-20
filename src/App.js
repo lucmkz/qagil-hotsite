@@ -328,6 +328,7 @@ function App() {
         speed={0.1}
         onClick={() => parallax.scrollTo(5)}
         style={{
+          padding: '0 20px',
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'center',
@@ -358,6 +359,7 @@ function App() {
           style={{
             opacity: '0.4',
             position: 'absolute',
+            width: '40%',
           }}
         />
         <img
@@ -393,6 +395,7 @@ function App() {
       >
         <p
           style={{
+            padding: '0 20px',
             position: 'absolute',
             top: 10,
             color: '#f99000',
