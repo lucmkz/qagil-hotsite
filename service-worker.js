@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/qagil-hotsite/precache-manifest.257d003d8b00684c58be296888c88b61.js"
+  "/qagil-hotsite/precache-manifest.b55722632868864250643d31e536bf4e.js"
 );
 
 self.addEventListener('message', (event) => {

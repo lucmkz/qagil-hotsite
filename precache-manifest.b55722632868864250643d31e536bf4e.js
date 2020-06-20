@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "428655d519472934da5c42c44b023b9c",
+    "revision": "7b84c6676fb5704ed70e72c939923668",
     "url": "/qagil-hotsite/index.html"
   },
   {
-    "revision": "ce7631e5a224c657d527",
+    "revision": "18cbbe607400487c9438",
     "url": "/qagil-hotsite/static/css/main.313ef558.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/qagil-hotsite/static/js/2.8267a960.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "ce7631e5a224c657d527",
-    "url": "/qagil-hotsite/static/js/main.71092ef8.chunk.js"
+    "revision": "18cbbe607400487c9438",
+    "url": "/qagil-hotsite/static/js/main.368417d7.chunk.js"
   },
   {
     "revision": "660ec9792a94f588df25",
